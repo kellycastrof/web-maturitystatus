@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block body %}
+<div>
+    <div class="d-flex justify-content-center m-5">
+        <h1>Welcome!</h1>
+    </div>
+    <div class="m-5">
+        <h4>This is a classification tool, for the moment the maturity status of the banana can be classified into
+            four classes:
+        </h4>
+    </div>
+    <div class="m-5">
+        <div class="mx-5 card-group">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Class A</h5>
+                    <p class="card-text">Immature</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Class B</h5>
+                    <p class="card-text">Partially mature</p>
+                </div>
+            </div>
+        </div>
+        <div class="mx-5 card-group">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Class C</h5>
+                    <p class="card-text">Mature</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Class D</h5>
+                    <p class="card-text">Over-mature</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="m-5">
+        <a href="/fruit/">Go to prediction >></a>
+    </div>
+</div>
+
+{% endblock %}

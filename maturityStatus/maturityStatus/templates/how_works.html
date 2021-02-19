@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block body %}
+<div>
+    <div class="d-flex justify-content-center m-5">
+        <h1>Classifier</h1>
+    </div>
+    <div class="m-5">
+        <h4>Banana maturity status</h4>
+    </div>
+    <div class="m-5">
+        <div>
+            <p class="text-justify">This is a maturity state classifier, transfer learning with the pre-trained MobileNet V2 model was used. We
+                obtained an 88% accuracy in the predictions.
+            </p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="https://i.postimg.cc/26sRVszz/VGGAccuracy.png"/>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="https://i.postimg.cc/dV6hrBZM/VGGLoss.png"/>
+            </div>
+        </div>
+        <div class="mt-5">
+            <p>You can see the repository of the model 
+                <a href="https://github.com/kellycastrof/IA-MaturityStatusClassification">here.</a>
+            </p>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
